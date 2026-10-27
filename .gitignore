@@ -1,0 +1,66 @@
+# ==============================================================================
+# ARIA (.gitignore)
+# ==============================================================================
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables & secrets (CRITICAL: Never commit API keys)
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+! .env.example
+
+# ARIA Runtime & User State Data
+.aria/
+aria.sock
+*.db
+*.sqlite
+*.sqlite3
+chroma/
+*/chroma/
+chroma_db/
+models/
+voice_temp/
+*.wav
+
+# Distribution & Packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Testing & Browser Automation Artifacts
+test-results/
+playwright-report/
+.playwright/
+screenshots/
+*.log
+
+# Editor & OS artifacts
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

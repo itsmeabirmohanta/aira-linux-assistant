@@ -1,0 +1,301 @@
+/* ================================================================
+ * ARIA — SWISS MODERNISM 2.0 DESIGN SYSTEM
+ * Rational Grid • Bold High-Contrast Typography • Hairline Precision
+ * ================================================================ */
+
+QMainWindow, QDialog, QWidget#CentralWidget {
+    background-color: #090A0D;
+    color: #E2E5EB;
+    font-family: "Inter", -apple-system, "Helvetica Neue", "Arial", sans-serif;
+    font-size: 13px;
+    selection-background-color: #0055FF;
+    selection-color: #FFFFFF;
+}
+
+/* ── Precision Scrollbars ────────────────────────────────────────── */
+QScrollBar:vertical {
+    background: transparent;
+    width: 5px;
+    margin: 2px;
+}
+QScrollBar::handle:vertical {
+    background: #252833;
+    border-radius: 2px;
+    min-height: 24px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #0055FF;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* ── Structural Cards & Panels ───────────────────────────────────── */
+QFrame.card {
+    background-color: #111318;
+    border: 1px solid #20242D;
+    border-radius: 5px;
+    padding: 16px;
+}
+QFrame.card:hover {
+    border: 1px solid #363C4A;
+}
+
+QFrame.highlight-card {
+    background-color: #12151D;
+    border: 1px solid #0055FF;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+/* ── Swiss Typographic Hierarchy ─────────────────────────────────── */
+QLabel.heading-1 {
+    font-size: 26px;
+    font-weight: 900;
+    color: #FFFFFF;
+    letter-spacing: -0.6px;
+}
+QLabel.heading-2 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: -0.3px;
+}
+QLabel.heading-3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #F0F2F6;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+QLabel.subtitle {
+    font-size: 12px;
+    color: #7B8292;
+    line-height: 1.45;
+}
+QLabel.tech-label {
+    font-family: "JetBrains Mono", "SF Mono", "DejaVu Sans Mono", monospace;
+    font-size: 11px;
+    color: #6C7383;
+    letter-spacing: 1px;
+}
+
+/* ── Action Buttons ──────────────────────────────────────────────── */
+QPushButton {
+    background-color: #161820;
+    color: #E2E6EF;
+    border: 1px solid #2A2E3B;
+    border-radius: 4px;
+    padding: 9px 18px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+QPushButton:hover {
+    background-color: #1E212B;
+    border: 1px solid #484F63;
+    color: #FFFFFF;
+}
+QPushButton:pressed {
+    background-color: #0E1015;
+    border: 1px solid #0055FF;
+}
+
+/* Swiss Inversion: High-voltage solid white with stark dark typography */
+QPushButton.primary-btn {
+    background-color: #FFFFFF;
+    color: #090A0D;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 10px 22px;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+QPushButton.primary-btn:hover {
+    background-color: #0055FF;
+    border: 1px solid #0055FF;
+    color: #FFFFFF;
+}
+QPushButton.primary-btn:pressed {
+    background-color: #0044CC;
+    border: 1px solid #0044CC;
+    color: #FFFFFF;
+}
+
+QPushButton.success-btn {
+    background-color: #0B1E15;
+    color: #00E575;
+    border: 1px solid #00E575;
+    border-radius: 4px;
+    padding: 9px 18px;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+QPushButton.success-btn:hover {
+    background-color: #00E575;
+    color: #090A0D;
+}
+
+QPushButton.danger-btn {
+    background-color: #220B0B;
+    color: #FF3B30;
+    border: 1px solid #FF3B30;
+    border-radius: 4px;
+    padding: 9px 18px;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+QPushButton.danger-btn:hover {
+    background-color: #FF3B30;
+    color: #FFFFFF;
+}
+
+QPushButton.ghost-btn {
+    background-color: transparent;
+    color: #7B8292;
+    border: 1px solid #1E2129;
+    border-radius: 4px;
+}
+QPushButton.ghost-btn:hover {
+    color: #FFFFFF;
+    background-color: #161820;
+    border: 1px solid #363C4B;
+}
+
+/* ── Precise Modular Inputs ──────────────────────────────────────── */
+QLineEdit, QComboBox, QSpinBox, QKeySequenceEdit {
+    background-color: #111319;
+    border: 1px solid #232732;
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding: 9px 12px;
+    font-size: 13px;
+    selection-background-color: #0055FF;
+}
+QLineEdit:focus, QComboBox:focus, QSpinBox:focus, QKeySequenceEdit:focus {
+    border: 1px solid #0055FF;
+    background-color: #141720;
+}
+
+QComboBox::drop-down {
+    border: none;
+    padding-right: 10px;
+}
+QComboBox QAbstractItemView {
+    background-color: #111319;
+    border: 1px solid #2A2E3B;
+    color: #FFFFFF;
+    selection-background-color: #0055FF;
+    selection-color: #FFFFFF;
+    outline: none;
+}
+
+/* ── Swiss Architectural Tabs ────────────────────────────────────── */
+QTabWidget::pane {
+    border: 1px solid #20242D;
+    background-color: #111318;
+    border-radius: 5px;
+    padding: 16px;
+    margin-top: -1px;
+}
+QTabBar::tab {
+    background-color: #0D0F13;
+    color: #767D8E;
+    padding: 10px 20px;
+    margin-right: 3px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid #1A1D25;
+    border-bottom: none;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+QTabBar::tab:selected {
+    background-color: #111318;
+    color: #FFFFFF;
+    border: 1px solid #20242D;
+    border-bottom: 2px solid #0055FF;
+}
+QTabBar::tab:hover:!selected {
+    color: #D0D4DF;
+    background-color: #14171E;
+}
+
+/* ── Sliders ─────────────────────────────────────────────────────── */
+QSlider::groove:horizontal {
+    height: 4px;
+    background: #1F222B;
+    border-radius: 2px;
+}
+QSlider::sub-page:horizontal {
+    background: #0055FF;
+    border-radius: 2px;
+}
+QSlider::handle:horizontal {
+    background: #FFFFFF;
+    border: 1px solid #0055FF;
+    width: 14px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    border-radius: 2px;
+}
+
+/* ── Checkboxes ──────────────────────────────────────────────────── */
+QCheckBox {
+    spacing: 10px;
+    color: #D2D6E0;
+    font-size: 13px;
+}
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #2D323E;
+    background-color: #111319;
+}
+QCheckBox::indicator:checked {
+    background-color: #0055FF;
+    border: 1px solid #0055FF;
+}
+
+/* ── Technical Status Badges ─────────────────────────────────────── */
+QLabel.badge-green {
+    background-color: #091911;
+    color: #00E575;
+    border: 1px solid rgba(0, 229, 117, 0.4);
+    border-radius: 3px;
+    padding: 3px 8px;
+    font-family: "JetBrains Mono", "SF Mono", monospace;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+QLabel.badge-purple {
+    background-color: #0C1427;
+    color: #3B82F6;
+    border: 1px solid rgba(59, 130, 246, 0.4);
+    border-radius: 3px;
+    padding: 3px 8px;
+    font-family: "JetBrains Mono", "SF Mono", monospace;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+QLabel.badge-red {
+    background-color: #1F0B0B;
+    color: #FF453A;
+    border: 1px solid rgba(255, 69, 58, 0.4);
+    border-radius: 3px;
+    padding: 3px 8px;
+    font-family: "JetBrains Mono", "SF Mono", monospace;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,19 @@
+[Desktop Entry]
+Name=ARIA Control Center
+Comment=Autonomous Resident Intelligence Agent for Linux
+Exec=/home/itsmeabirmohanta/.aria/run_gui.sh
+Icon=/home/itsmeabirmohanta/.aria/aria_icon.png
+Terminal=false
+Type=Application
+Categories=Utility;Development;ArtificialIntelligence;
+StartupNotify=true
+Keywords=ai;agent;spotlight;raycast;assistant;
+Actions=Settings;Onboarding;
+
+[Desktop Action Settings]
+Name=Settings
+Exec=/home/itsmeabirmohanta/.aria/run_gui.sh --settings
+
+[Desktop Action Onboarding]
+Name=Setup Tour
+Exec=/home/itsmeabirmohanta/.aria/run_gui.sh --onboarding

@@ -1,0 +1,151 @@
+/* ================================================================
+ * ARIA HUD — SWISS MODERNISM 2.0 FLOATING COMMAND BAR
+ * Rationalist Geometry • Micro-Borders • High-Contrast Readouts
+ * ================================================================ */
+
+QWidget#AriaHUDWindow {
+    background-color: #0A0B0E;
+    border: 1px solid #232732;
+    border-radius: 6px;
+}
+
+QFrame#HeaderBar {
+    background: transparent;
+    border: none;
+    padding: 6px 12px;
+}
+
+QLabel#LogoLabel {
+    color: #FFFFFF;
+    font-family: "JetBrains Mono", "SF Mono", "DejaVu Sans Mono", monospace;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+QLabel#StatusLabel {
+    color: #00E575;
+    font-family: "JetBrains Mono", "SF Mono", monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+QLineEdit#CommandInput {
+    background-color: #12141B;
+    border: 1px solid #262B37;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: "Inter", -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 14px;
+    selection-background-color: #0055FF;
+}
+
+QLineEdit#CommandInput:focus {
+    border: 1px solid #0055FF;
+    background-color: #151821;
+}
+
+QPushButton#IconButton {
+    background-color: #14161F;
+    border: 1px solid #272C39;
+    border-radius: 4px;
+    color: #CED3DF;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 12px;
+}
+
+QPushButton#IconButton:hover {
+    background-color: #1E222F;
+    border: 1px solid #0055FF;
+    color: #FFFFFF;
+}
+
+QPushButton#MicButton {
+    background-color: #14161F;
+    border: 1px solid #272C39;
+    border-radius: 4px;
+    color: #8D94A5;
+    font-size: 14px;
+    padding: 10px 14px;
+}
+
+QPushButton#MicButton:hover {
+    background-color: #1E222F;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+QPushButton#MicButton[recording="true"] {
+    background-color: #FF3B30;
+    color: #FFFFFF;
+    border: 1px solid #FF3B30;
+}
+
+QTextBrowser#TranscriptView {
+    background-color: #08090C;
+    border: 1px solid #1C2028;
+    border-radius: 4px;
+    color: #DDE1EB;
+    font-family: "JetBrains Mono", "SF Mono", "DejaVu Sans Mono", monospace;
+    font-size: 12px;
+    padding: 14px;
+    line-height: 1.5;
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 4px;
+    margin: 2px 0 2px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #252833;
+    border-radius: 2px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #0055FF;
+}
+
+/* ── Modal Confirmation Dialog (Swiss Safety Protocol) ─────────── */
+QDialog#ConfirmationDialog {
+    background-color: #0B0C10;
+    border: 1px solid #FF3B30;
+    border-radius: 6px;
+}
+
+QPushButton#CancelButton {
+    background-color: #151821;
+    color: #8D94A5;
+    border: 1px solid #272C39;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 8px 16px;
+}
+QPushButton#CancelButton:hover {
+    color: #FFFFFF;
+    background-color: #1E222F;
+    border: 1px solid #FFFFFF;
+}
+
+QPushButton#DangerButton {
+    background-color: #FF3B30;
+    color: #FFFFFF;
+    border: 1px solid #FF3B30;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 8px 18px;
+}
+QPushButton#DangerButton:hover {
+    background-color: #E62E23;
+}
