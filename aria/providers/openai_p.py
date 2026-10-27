@@ -3,7 +3,9 @@ OpenAI AI provider implementation for ARIA.
 Supports GPT-4o with vision and function/tool calling.
 """
 
+from __future__ import annotations
 import json
+from typing import List, Dict, Any, Optional
 from aria.utils.logger import logger
 from aria.config import config
 from aria.providers.base import BaseProvider, AgentMessage, ProviderResponse, ToolCall

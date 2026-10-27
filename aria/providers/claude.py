@@ -3,6 +3,8 @@ Anthropic Claude provider implementation for ARIA.
 Supports Claude 3.5 Sonnet with vision and tools.
 """
 
+from __future__ import annotations
+from typing import List, Dict, Any, Optional
 from aria.utils.logger import logger
 from aria.config import config
 from aria.providers.base import BaseProvider, AgentMessage, ProviderResponse, ToolCall

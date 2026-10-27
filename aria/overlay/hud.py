@@ -3,8 +3,10 @@ Floating HUD Overlay Window for ARIA.
 A Spotlight/Raycast-like glassmorphism interface that appears on hotkey press.
 """
 
+from __future__ import annotations
 import asyncio
 import os
+from typing import Dict, Any, Optional
 from pathlib import Path
 from aria.utils.logger import logger
 

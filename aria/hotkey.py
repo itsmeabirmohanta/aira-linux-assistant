@@ -7,9 +7,11 @@ Supports:
    can reliably toggle ARIA instantly even under strict Wayland compositors!
 """
 
+from __future__ import annotations
 import os
 import socket
 import threading
+from typing import Callable, Optional
 from pathlib import Path
 from aria.utils.logger import logger
 

@@ -3,7 +3,9 @@ Google Gemini AI provider implementation for ARIA.
 Supports Gemini 2.0 Flash / 1.5 Pro with multimodal image inputs and native function calling.
 """
 
+from __future__ import annotations
 import io
+from typing import List, Dict, Any, Optional
 from aria.utils.logger import logger
 from aria.config import config
 from aria.providers.base import BaseProvider, AgentMessage, ProviderResponse, ToolCall

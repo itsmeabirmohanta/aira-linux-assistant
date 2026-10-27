@@ -3,6 +3,8 @@ Ollama local model provider implementation for ARIA.
 Supports local models (e.g. llava, llama3.2-vision, mistral, qwen2.5) with zero cloud dependency.
 """
 
+from __future__ import annotations
+from typing import List, Dict, Any, Optional
 from aria.utils.logger import logger
 from aria.config import config
 from aria.providers.base import BaseProvider, AgentMessage, ProviderResponse, ToolCall

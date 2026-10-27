@@ -3,6 +3,8 @@ Tool execution dispatcher for ARIA.
 Dispatches tool calls to actual functions, checks safety, and formats results.
 """
 
+from __future__ import annotations
+from typing import Dict, Any, Optional
 from aria.utils.logger import logger
 from aria.providers.base import ToolCall
 from aria.utils.confirmation import confirmation_manager
