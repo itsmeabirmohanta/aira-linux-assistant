@@ -3,6 +3,7 @@ Core ReAct Agent loop for ARIA.
 Coordinates reasoning, vision, tool execution, memory, and user updates.
 """
 
+from __future__ import annotations
 import json
 from typing import AsyncGenerator, Dict, Any, Optional
 from PIL import Image
@@ -12,7 +13,7 @@ from aria.agent.memory import Memory
 from aria.agent.planner import build_system_prompt
 from aria.agent.executor import tool_executor
 from aria.providers import get_provider
-from aria.providers.base import AgentMessage, ToolCall
+from aria.providers.base import BaseProvider, AgentMessage, ToolCall
 from aria.tools import TOOL_SCHEMAS
 from aria.tools.screen import capture_screen
 
