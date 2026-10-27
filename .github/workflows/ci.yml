@@ -25,7 +25,7 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgl1-mesa-glx libegl1 libxkbcommon-x11-0 libpulse0 libportaudio2 ffmpeg xvfb
+          sudo apt-get install -y libgl1 libgl1-mesa-dri libegl1 libxkbcommon-x11-0 libpulse0 libportaudio2 ffmpeg xvfb
 
       - name: Install Python dependencies
         run: |
